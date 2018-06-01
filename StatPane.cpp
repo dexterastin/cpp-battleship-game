@@ -15,10 +15,11 @@ StatPane::~StatPane() {
 
 void StatPane::draw() {
     wattroff(this->mpWindow, COLOR_PAIR(2));
-    mvwprintw(this->mpWindow, 1, 2, "AIRCRAFT : AAAAA");
-    mvwprintw(this->mpWindow, 2, 2, "BATTLESHIP : BBBB");
-    mvwprintw(this->mpWindow, 3, 2, "CRUISER : CCC");
-    mvwprintw(this->mpWindow, 4, 2, "DESTROYER: DD DD");
+    mvwprintw(this->mpWindow, 1, 2, "TURN : 0");
+    mvwprintw(this->mpWindow, 2, 2, "AIRCRAFT : AAAAA");
+    mvwprintw(this->mpWindow, 3, 2, "BATTLESHIP : BBBB");
+    mvwprintw(this->mpWindow, 4, 2, "CRUISER : CCC");
+    mvwprintw(this->mpWindow, 5, 2, "DESTROYER: DD DD");
     wattroff(this->mpWindow, COLOR_PAIR(2));
     wrefresh(this->mpWindow);
 }

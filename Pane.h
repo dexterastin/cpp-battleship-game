@@ -9,17 +9,17 @@
 #include <curses.h>
 
 class Pane {
+protected:
+    int width, height;
+    int x, y;
+    WINDOW *mpWindow;
+
 public:
     Pane(int x, int y, int width, int height);
 
     virtual ~Pane();
 
     virtual void draw();
-
-protected:
-    int width, height;
-    int x, y;
-    WINDOW *mpWindow;
 };
 
 

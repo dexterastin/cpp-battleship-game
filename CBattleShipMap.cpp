@@ -3,6 +3,7 @@
 //
 
 #include "CBattleShipMap.h"
+#include "Ship.h"
 
 CBattleShipMap::CBattleShipMap()
         : Pane(4, 4, MAP_SIZE + 3, MAP_SIZE + 2) {
@@ -34,3 +35,4 @@ void CBattleShipMap::draw() {
     wattroff(this->mpWindow, COLOR_PAIR(1));
     wrefresh(this->mpWindow);
 }
+

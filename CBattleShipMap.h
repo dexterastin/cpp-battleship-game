@@ -7,10 +7,14 @@
 
 
 #include "Pane.h"
+#include "GameManager.h"
 
 #define MAP_SIZE 8
 
 class CBattleShipMap : Pane {
+protected:
+    char mapData[MAP_SIZE][MAP_SIZE];
+
 public:
     CBattleShipMap();
 
@@ -18,8 +22,7 @@ public:
 
     void draw();
 
-protected:
-    char mapData[MAP_SIZE][MAP_SIZE];
+
 };
 
 

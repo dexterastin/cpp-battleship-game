@@ -2,6 +2,7 @@
 // Created by Gihyeon Yang on 2018. 5. 28..
 //
 
+#include <iostream>
 #include "CBattleShipApp.h"
 
 CBattleShipApp::CBattleShipApp() {
@@ -9,16 +10,21 @@ CBattleShipApp::CBattleShipApp() {
 }
 
 CBattleShipApp::~CBattleShipApp() {
-
+    delete this->cBattleShipMap;
+    delete this->inputPane;
+    delete this->statPane;
 }
 
 void CBattleShipApp::play() {
-    this->init();
+    GameManager gameManager(0, 10);
+    gameManager.init();
+
+    this->init(gameManager);
     this->render();
     this->destroy();
 }
 
-void CBattleShipApp::init() {
+void CBattleShipApp::init(GameManager &gameManager) {
     initscr();
     start_color();
     cbreak();
@@ -29,7 +35,7 @@ void CBattleShipApp::init() {
     init_pair(3, COLOR_YELLOW, COLOR_BLACK);
 
     this->cBattleShipMap = new CBattleShipMap();
-    this->statPane = new StatPane(30, 3, 30, 6);
+    this->statPane = new StatPane(30, 3, 30, 7);
     this->inputPane = new InputPane(30, 15, 30, 4);
 }
 
@@ -43,8 +49,14 @@ void CBattleShipApp::render() {
     refresh();
 }
 
+void CBattleShipApp::update() {
+
+}
+
+
 void CBattleShipApp::destroy() {
     getch();
     endwin();
     delete this->cBattleShipMap;
 }
+

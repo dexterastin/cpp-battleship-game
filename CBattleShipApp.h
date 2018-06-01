@@ -9,25 +9,28 @@
 #include "CBattleShipMap.h"
 #include "StatPane.h"
 #include "InputPane.h"
+#include "GameManager.h"
 
 class CBattleShipApp {
+protected:
+    CBattleShipMap *cBattleShipMap;
+    StatPane *statPane;
+    InputPane *inputPane;
+
+    void init(GameManager &gameManager);
+
+    void render();
+
+    void update();
+
+    void destroy();
+
 public:
     CBattleShipApp();
 
     ~CBattleShipApp();
 
     void play();
-
-protected:
-    CBattleShipMap *cBattleShipMap;
-    StatPane *statPane;
-    InputPane *inputPane;
-
-    void init();
-
-    void render();
-
-    void destroy();
 };
 
 
