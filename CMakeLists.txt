@@ -17,11 +17,12 @@ add_executable(
         InputPane.h
         CBattleShipApp.cpp
         CBattleShipApp.h
-        Ship.cpp
-        Ship.h
-        SBattleShip.h
-        SAirCraft.h
-        SCruiser.h
-        SDestroyer.h
-        GameManager.cpp GameManager.h)
-
+        Ship/Ship.cpp
+        Ship/Ship.h
+        Ship/SBattleShip.h
+        Ship/SAirCraft.h
+        Ship/SCruiser.h
+        Ship/SDestroyer.h
+        Player.cpp
+        Player.h
+        ShipHeader.h)

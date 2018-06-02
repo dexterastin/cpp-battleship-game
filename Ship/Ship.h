@@ -10,15 +10,24 @@
 struct position {
     int x;
     int y;
-    int d;
 
     bool operator==(const position &rhs) const;
 
     bool operator!=(const position &rhs) const;
 
-    struct position operator+=(const position &rhs) const;
+    struct position operator+(const position &rhs) const;
 
-    struct position operator*=(int r) const;
+    struct position operator*(int r) const;
+
+    bool operator<(const position &rhs) const;
+
+    bool operator>(const position &rhs) const;
+
+    bool operator<=(const position &rhs) const;
+
+    bool operator>=(const position &rhs) const;
+
+    friend std::ostream &operator<<(std::ostream &os, const position &position1);
 };
 
 class Ship {
@@ -26,6 +35,7 @@ private:
     int hp;
     const std::string name;
     struct position pos;
+    struct position direction;
     const int size;
     const int type;
 
@@ -39,13 +49,15 @@ public:
 
     const std::string &getName() const;
 
-    const position &getPos() const;
+    position getPos();
 
     const int getSize() const;
 
+    const position &getDirection() const;
+
     const int getType() const;
 
-    void setPos();
+    void setPos(char map[8][8]);
 
 
 };

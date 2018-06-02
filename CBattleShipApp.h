@@ -9,7 +9,6 @@
 #include "CBattleShipMap.h"
 #include "StatPane.h"
 #include "InputPane.h"
-#include "GameManager.h"
 
 class CBattleShipApp {
 protected:
@@ -17,7 +16,7 @@ protected:
     StatPane *statPane;
     InputPane *inputPane;
 
-    void init(GameManager &gameManager);
+    void init();
 
     void render();
 

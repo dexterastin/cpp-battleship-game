@@ -7,7 +7,6 @@
 
 
 #include "Pane.h"
-#include "GameManager.h"
 
 #define MAP_SIZE 8
 
@@ -16,13 +15,13 @@ protected:
     char mapData[MAP_SIZE][MAP_SIZE];
 
 public:
-    CBattleShipMap();
+    CBattleShipMap(int y);
 
     ~CBattleShipMap();
 
     void draw();
 
-
+    void setMapData(int x, int y, char type);
 };
 
 

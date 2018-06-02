@@ -16,15 +16,12 @@ CBattleShipApp::~CBattleShipApp() {
 }
 
 void CBattleShipApp::play() {
-    GameManager gameManager(0, 10);
-    gameManager.init();
-
-    this->init(gameManager);
+    this->init();
     this->render();
     this->destroy();
 }
 
-void CBattleShipApp::init(GameManager &gameManager) {
+void CBattleShipApp::init() {
     initscr();
     start_color();
     cbreak();
@@ -34,7 +31,7 @@ void CBattleShipApp::init(GameManager &gameManager) {
     init_pair(2, COLOR_CYAN, COLOR_BLACK);
     init_pair(3, COLOR_YELLOW, COLOR_BLACK);
 
-    this->cBattleShipMap = new CBattleShipMap();
+    this->cBattleShipMap = new CBattleShipMap(10);
     this->statPane = new StatPane(30, 3, 30, 7);
     this->inputPane = new InputPane(30, 15, 30, 4);
 }
