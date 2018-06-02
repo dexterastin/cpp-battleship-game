@@ -25,4 +25,5 @@ add_executable(
         Ship/SDestroyer.h
         Player.cpp
         Player.h
-        ShipHeader.h)
+        ShipHeader.h
+        GameManager.cpp GameManager.h)

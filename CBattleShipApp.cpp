@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "CBattleShipApp.h"
+#include "GameManager.h"
 
 CBattleShipApp::CBattleShipApp() {
 
@@ -19,6 +20,10 @@ void CBattleShipApp::play() {
     this->init();
     this->render();
     this->destroy();
+
+    GameManager gameManager;
+    gameManager.init();
+
 }
 
 void CBattleShipApp::init() {
