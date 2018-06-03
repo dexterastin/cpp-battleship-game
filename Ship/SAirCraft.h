@@ -6,6 +6,7 @@
 #define CPP_BATTLESHIP_GAME_SAIRCRAFT_H
 
 
+#include <ostream>
 #include "Ship.h"
 
 class SAirCraft

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="cpp_battleship_game"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cpp_battleship_game">
+				<Option output="/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/cpp_battleship_game" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpp_battleship_game"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cpp_battleship_game/fast">
+				<Option output="/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/cpp_battleship_game" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpp_battleship_game/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/CBattleShipApp.cpp">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/CBattleShipApp.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/CBattleShipMap.cpp">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/CBattleShipMap.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/GameManager.cpp">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/GameManager.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/InputPane.cpp">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/InputPane.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/Pane.cpp">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/Pane.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/Player.cpp">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/Player.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/Ship/SAirCraft.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/Ship/SBattleShip.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/Ship/SCruiser.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/Ship/SDestroyer.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/Ship/Ship.cpp">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/Ship/Ship.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/ShipHeader.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/StatPane.cpp">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/StatPane.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/main.cpp">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

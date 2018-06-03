@@ -6,6 +6,7 @@
 #define CPP_BATTLESHIP_GAME_SDESTROYER_H
 
 
+#include <ostream>
 #include "Ship.h"
 
 class SDestroyer
@@ -16,6 +17,7 @@ public:
             2,
             3
     ) {}
+
 };
 
 

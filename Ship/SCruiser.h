@@ -6,6 +6,7 @@
 #define CPP_BATTLESHIP_GAME_SCRUISER_H
 
 
+#include <ostream>
 #include "Ship.h"
 
 class SCruiser
@@ -16,6 +17,7 @@ public:
             3,
             2
     ) {}
+
 };
 
 

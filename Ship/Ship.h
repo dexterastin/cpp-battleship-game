@@ -47,6 +47,8 @@ public:
 
     int getHp() const;
 
+    void attack();
+    bool isDead();
     const std::string &getName() const;
 
     position getPos();
@@ -58,6 +60,8 @@ public:
     const int getType() const;
 
     void setPos(char map[8][8]);
+
+    friend std::ostream &operator<<(std::ostream &os, const Ship &ship);
 
 
 };

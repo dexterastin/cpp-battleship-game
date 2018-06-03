@@ -9,7 +9,6 @@
 
 Ship::Ship(const std::string &name, const int size, const int type)
         : hp(size), name(name), size(size), type(type) {
-    // this->setPos();
 }
 
 int Ship::getHp() const {
@@ -35,66 +34,59 @@ const int Ship::getType() const {
 
 void Ship::setPos(char map[8][8]) {
 
-    struct position rPos{}, tmpPos{};
+    struct position rPosition{};
+    struct position tmpPositoin{};
+
     bool found = false;
-    int rnd;
-    bool *dirCheck;
-    struct position directoin[4] = {
+    struct position direction[] = {
             {0,  1},
             {1,  0},
             {0,  -1},
             {-1, 0}
     };
-
+    bool validDirection[4];
 
     do {
-        rPos = position {
-                std::rand() % 8,
-                std::rand() % 8
+        rPosition = {
+                std::rand() % 8, std::rand() % 8
         };
 
-        if (map[rPos.x][rPos.y] != '_') continue;
+        if (map[rPosition.x][rPosition.y] != '_') continue;
 
-        dirCheck = new bool[4]();
         bool f = false;
 
         for (int i = 0; i < 4; ++i) {
-            dirCheck[i] = true;
-        }
-
-        for (int i = 0; i < 4; ++i) {
+            validDirection[i] = true;
             for (int range = 0; range < this->getSize(); ++range) {
-                tmpPos = rPos + (directoin[i] * range);
+                tmpPositoin = rPosition + direction[i] * range;
                 if (
-                        !(0 <= tmpPos.x && tmpPos.x <= 7 &&
-                          0 <= tmpPos.y && tmpPos.y <= 7) ||
-                        map[tmpPos.x][tmpPos.y] != '_'
+                        !(
+                                0 <= tmpPositoin.x && tmpPositoin.x <= 7 &&
+                                0 <= tmpPositoin.y && tmpPositoin.y <= 7
+                        ) ||
+                        map[tmpPositoin.x][tmpPositoin.y] != '_'
                         ) {
-                    dirCheck[i] = false;
+                    validDirection[i] = false;
                     break;
                 }
             }
-            f |= dirCheck[i];
+            f |= validDirection[i];
         }
 
-        if (!f) {
-            continue;
-        }
+        if (!f) continue;
 
+        int rnd = 0;
         do {
             rnd = std::rand() % 4;
-        } while (!dirCheck[rnd]);
+        } while (!validDirection[rnd]);
 
-        this->direction = directoin[rnd];
-        this->pos = rPos;
+        this->direction = direction[rnd];
+
         found = true;
-
 
     } while (!found);
 
-    delete dirCheck;
-
-    Ship::pos = rPos;
+    Ship::pos = rPosition;
 }
 
 const position &Ship::getDirection() const {
@@ -144,4 +136,18 @@ bool position::operator>=(const position &rhs) const {
 std::ostream &operator<<(std::ostream &os, const position &position1) {
     os << "x: " << position1.x << " y: " << position1.y;
     return os;
+}
+
+std::ostream &operator<<(std::ostream &os, const Ship &ship) {
+    os << "hp: " << ship.hp << " name: " << ship.name << " pos: " << ship.pos << " direction: " << ship.direction
+       << " size: " << ship.size << " type: " << ship.type;
+    return os;
+}
+
+void Ship::attack() {
+    this->hp -= 1;
+}
+
+bool Ship::isDead() {
+    return this->hp <= 0;
 }
