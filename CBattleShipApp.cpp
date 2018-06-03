@@ -6,6 +6,8 @@
 #include "CBattleShipApp.h"
 #include "GameManager.h"
 
+#define GAME_TURN 100
+
 CBattleShipApp::CBattleShipApp() {
 
 }
@@ -14,15 +16,21 @@ CBattleShipApp::~CBattleShipApp() {
     delete this->cBattleShipMap;
     delete this->inputPane;
     delete this->statPane;
+    delete this->gameManager;
 }
 
 void CBattleShipApp::play() {
     this->init();
     this->render();
+
+    while (gameManager->getTurn() != GAME_TURN && !gameManager->isDeadAllShip()) {
+        gameManager->addTurn();
+        gameManager->attack();
+        this->update();
+    }
+
     this->destroy();
 
-    GameManager gameManager;
-    gameManager.init();
 
 }
 
@@ -36,23 +44,32 @@ void CBattleShipApp::init() {
     init_pair(2, COLOR_CYAN, COLOR_BLACK);
     init_pair(3, COLOR_YELLOW, COLOR_BLACK);
 
-    this->cBattleShipMap = new CBattleShipMap(10);
+    this->gameManager = new GameManager(
+            new Player(1),
+            new Player(0),
+            new InputPane(30, 15, 30, 4)
+    );
+
+    this->gameManager->init();
+
     this->statPane = new StatPane(30, 3, 30, 7);
-    this->inputPane = new InputPane(30, 15, 30, 4);
+    this->inputPane = this->gameManager->getInputPane();
 }
 
 void CBattleShipApp::render() {
     mvprintw(1, 1, "<< Battle Ship Game >>");
 
-    this->cBattleShipMap->draw();
-    this->statPane->draw();
+    this->gameManager->render();
+    this->statPane->draw(
+            this->gameManager->getTurn()
+    );
     this->inputPane->draw();
 
     refresh();
 }
 
 void CBattleShipApp::update() {
-
+    this->render();
 }
 
 

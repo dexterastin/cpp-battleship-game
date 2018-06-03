@@ -9,9 +9,11 @@
 #include "CBattleShipMap.h"
 #include "StatPane.h"
 #include "InputPane.h"
+#include "GameManager.h"
 
 class CBattleShipApp {
 protected:
+    GameManager *gameManager;
     CBattleShipMap *cBattleShipMap;
     StatPane *statPane;
     InputPane *inputPane;

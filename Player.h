@@ -7,22 +7,27 @@
 
 
 #include "CBattleShipMap.h"
+#include "Ship/Ship.h"
 
 class Player {
 protected:
     CBattleShipMap *map;
-
-private:
-    void setupShips();
+    int type;
 
 public:
-    Player();
+    Player(int col);
 
     ~Player();
 
     virtual void init();
 
     void render();
+
+    void setupShip(Ship *ship);
+
+    void setHitResult(struct position pos, Ship *deadShip = nullptr);
+
+    char at(struct position);
 
 };
 

@@ -13,9 +13,9 @@ StatPane::~StatPane() {
 
 }
 
-void StatPane::draw() {
+void StatPane::draw(int turn) {
     wattroff(this->mpWindow, COLOR_PAIR(2));
-    mvwprintw(this->mpWindow, 1, 2, "TURN : 0");
+    mvwprintw(this->mpWindow, 1, 2, "TURN : %d", turn);
     mvwprintw(this->mpWindow, 2, 2, "AIRCRAFT : AAAAA");
     mvwprintw(this->mpWindow, 3, 2, "BATTLESHIP : BBBB");
     mvwprintw(this->mpWindow, 4, 2, "CRUISER : CCC");

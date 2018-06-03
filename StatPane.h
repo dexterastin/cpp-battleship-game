@@ -14,7 +14,7 @@ public:
 
     ~StatPane();
 
-    virtual void draw();
+    virtual void draw(int);
 };
 
 

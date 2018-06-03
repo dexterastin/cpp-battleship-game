@@ -11,17 +11,18 @@
 #define MAP_SIZE 8
 
 class CBattleShipMap : Pane {
-protected:
+public:
     char mapData[MAP_SIZE][MAP_SIZE];
 
 public:
-    CBattleShipMap(int y);
+    CBattleShipMap(int y, const char *header);
 
     ~CBattleShipMap();
 
     void draw();
 
-    void setMapData(int x, int y, char type);
+    void setMapData(struct position, char type);
+
 };
 
 

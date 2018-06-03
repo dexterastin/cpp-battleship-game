@@ -26,4 +26,4 @@ add_executable(
         Player.cpp
         Player.h
         ShipHeader.h
-        GameManager.cpp GameManager.h)
+        GameManager.cpp GameManager.h )

@@ -7,11 +7,13 @@
 
 #include "ShipHeader.h"
 #include "Player.h"
+#include "InputPane.h"
 
 #define AIRCRAFT 1
 #define BATTLESHIP 1
 #define CRUISER 1
 #define DESTROYER 2
+#define SHIP_TYPE 4
 
 class GameManager {
 private:
@@ -19,10 +21,13 @@ private:
     int turn;
     int mode;
     Player *attacker;
+    int numOfShip[4];
     Player *defender;
+    InputPane *inputPane;
 
 public:
-    GameManager();
+
+    GameManager(Player *attacker, Player *defender, InputPane *inputPane);
 
     ~GameManager();
 
@@ -54,7 +59,15 @@ public:
 
     void setDefender(Player *defender);
 
-    Ship **isDeadShip() const;
+    bool isDeadAllShip();
+
+    InputPane *getInputPane() const;
+
+    void setInputPane(InputPane *inputPane);
+
+    void attack();
+
+    Ship *attackShip(struct position attackPos);
 };
 
 
