@@ -1,5 +1,7 @@
 //
-// Created by Gihyeon Yang on 2018. 5. 28..
+// C++ BattleShip Project
+// 작성 일자 : 2018.05.28
+// 20171648 양기현
 //
 
 #ifndef CPP_BATTLESHIP_GAME_CBATTLESHIPMAP_H

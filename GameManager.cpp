@@ -1,5 +1,7 @@
 //
-// Created by Gihyeon Yang on 2018. 6. 2..
+// C++ BattleShip Project
+// 작성 일자 : 2018.06.02
+// 20171648 양기현
 //
 
 #include "GameManager.h"
@@ -13,6 +15,8 @@ GameManager::GameManager(Player *attacker, Player *defender, InputPane *inputPan
     this->numOfShip[1] = BATTLESHIP;
     this->numOfShip[2] = CRUISER;
     this->numOfShip[3] = DESTROYER;
+
+    this->ship = nullptr;
 
     switch (BOT) {
         case 0:
@@ -46,6 +50,7 @@ GameManager::~GameManager() {
         }
         delete[] ship[type];
     }
+
     delete[] ship;
 }
 

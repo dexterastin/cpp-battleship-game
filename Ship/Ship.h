@@ -1,5 +1,7 @@
 //
-// Created by Gihyeon Yang on 2018. 6. 1..
+// C++ BattleShip Project
+// 작성 일자 : 2018.06.01
+// 20171648 양기현
 //
 
 #ifndef CPP_BATTLESHIP_GAME_SHIP_H
@@ -33,17 +35,17 @@ struct position {
 class Ship {
 private:
     int hp;
-    const std::string name;
+    std::string name;
     struct position pos;
     struct position direction;
-    const int size;
-    const int type;
+    int size;
+    int type;
 
 public:
 
     Ship();
 
-    Ship(const std::string &name, int size, int type);
+    Ship(const char *name, int size, int type);
 
     void attack();
 
@@ -51,16 +53,15 @@ public:
 
     position getPos();
 
-    const int getSize() const;
-
     const position &getDirection() const;
 
-    const int getType() const;
+    int getSize() const;
+
+    int getType() const;
 
     void setPos(char map[8][8]);
 
     friend std::ostream &operator<<(std::ostream &os, const Ship &ship);
-
 
 };
 

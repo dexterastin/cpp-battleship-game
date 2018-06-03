@@ -1,5 +1,7 @@
 //
-// Created by Gihyeon Yang on 2018. 6. 3..
+// C++ BattleShip Project
+// 작성 일자 : 2018.06.03
+// 20171648 양기현
 //
 
 #include "BattleShipAIBot.h"

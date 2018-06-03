@@ -1,9 +1,10 @@
 //
-// Created by Gihyeon Yang on 2018. 6. 2..
+// C++ BattleShip Project
+// 작성 일자 : 2018.06.02
+// 20171648 양기현
 //
 
 #ifndef CPP_BATTLESHIP_GAME_GAMEMANAGER_H
-#define CPP_BATTLESHIP_GAME_GAMEMANAGER_H
 
 #include "ShipHeader.h"
 #include "Player.h"
@@ -17,7 +18,9 @@
 #define DESTROYER 2
 #define SHIP_TYPE 4
 
-#define BOT 1 // 0: User, 1: Rnd, 2: AI
+#define BOT 0 // 0: User, 1: Rnd, 2: AI
+
+#define CPP_BATTLESHIP_GAME_GAMEMANAGER_H
 
 class GameManager {
 private:

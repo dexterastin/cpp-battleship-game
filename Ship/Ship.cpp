@@ -1,26 +1,26 @@
 //
-// Created by Gihyeon Yang on 2018. 6. 1..
+// C++ BattleShip Project
+// 작성 일자 : 2018.06.01
+// 20171648 양기현
 //
 
 #include "Ship.h"
-#include  <cstdlib>
+#include <cstdlib>
 #include <ctime>
 #include <iostream>
 
-Ship::Ship(const std::string &name, const int size, const int type)
+
+Ship::Ship() {
+
+}
+
+
+Ship::Ship(const char *name, const int size, const int type)
         : hp(size), name(name), size(size), type(type) {
 }
 
 position Ship::getPos() {
     return pos;
-}
-
-const int Ship::getSize() const {
-    return size;
-}
-
-const int Ship::getType() const {
-    return type;
 }
 
 
@@ -142,4 +142,12 @@ void Ship::attack() {
 
 bool Ship::isDead() {
     return this->hp <= 0;
+}
+
+int Ship::getSize() const {
+    return this->size;
+}
+
+int Ship::getType() const {
+    return this->type;
 }

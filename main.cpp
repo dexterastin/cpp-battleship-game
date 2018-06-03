@@ -1,6 +1,9 @@
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
+//
+// C++ BattleShip Project
+// 작성 일자 : 2018.05.28
+// 20171648 양기현
+//
+
 #include "CBattleShipApp.h"
 
 int main() {
@@ -15,8 +18,6 @@ int main() {
         total += app->play();
         delete app;
     }
-
-    std::cout << total / size << std::endl;
 
     return 0;
 }

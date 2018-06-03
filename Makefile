@@ -13,7 +13,7 @@ SOURSES = CBattleShipApp.cpp\
 	GameManager.cpp\
 	Bot.cpp\
 	Ship/Ship.cpp
-LDFLAGS = -lncursesw
+LDFLAGS = -lncurses
 
 all:
 	$(CC) $(CFLAGS) -o $(TARGET) $(SOURSES) $(LDFLAGS)

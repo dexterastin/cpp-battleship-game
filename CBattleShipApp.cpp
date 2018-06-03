@@ -1,5 +1,7 @@
 //
-// Created by Gihyeon Yang on 2018. 5. 28..
+// C++ BattleShip Project
+// 작성 일자 : 2018.05.28
+// 20171648 양기현
 //
 
 #include "CBattleShipApp.h"
@@ -51,23 +53,25 @@ void CBattleShipApp::init() {
     this->gameManager->init();
 
     this->statPane = new StatPane(30, 3, 30, 7);
-    this->inputPane = this->gameManager->getInputPane();
 }
 
 void CBattleShipApp::render() {
     mvprintw(1, 1, "<< Battle Ship Game >>");
 
     this->gameManager->render();
-    this->statPane->draw(
-            this->gameManager->getTurn()
-    );
-    this->inputPane->draw();
+    this->statPane->draw();
+    this->gameManager->getInputPane()->draw();
 
     refresh();
 }
 
 void CBattleShipApp::update() {
-    this->render();
+    this->gameManager->render();
+    this->gameManager->getInputPane()->draw();
+    this->statPane->update(
+            gameManager->getTurn()
+    );
+    refresh();
 }
 
 

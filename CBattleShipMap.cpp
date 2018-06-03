@@ -1,5 +1,7 @@
 //
-// Created by Gihyeon Yang on 2018. 5. 28..
+// C++ BattleShip Project
+// 작성 일자 : 2018.05.28
+// 20171648 양기현
 //
 
 #include <iostream>
@@ -23,9 +25,7 @@ CBattleShipMap::CBattleShipMap(int y, const char *header)
     mvwprintw(this->mpWindow, 0, 2, header);
 }
 
-CBattleShipMap::~CBattleShipMap() {
-
-}
+CBattleShipMap::~CBattleShipMap() = default;
 
 void CBattleShipMap::draw() {
     wattron(this->mpWindow, COLOR_PAIR(1));
