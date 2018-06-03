@@ -123,6 +123,87 @@ cpp_battleship_game/fast:
 	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/build
 .PHONY : cpp_battleship_game/fast
 
+BattleShipAIBot.o: BattleShipAIBot.cpp.o
+
+.PHONY : BattleShipAIBot.o
+
+# target to build an object file
+BattleShipAIBot.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o
+.PHONY : BattleShipAIBot.cpp.o
+
+BattleShipAIBot.i: BattleShipAIBot.cpp.i
+
+.PHONY : BattleShipAIBot.i
+
+# target to preprocess a source file
+BattleShipAIBot.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.i
+.PHONY : BattleShipAIBot.cpp.i
+
+BattleShipAIBot.s: BattleShipAIBot.cpp.s
+
+.PHONY : BattleShipAIBot.s
+
+# target to generate assembly for a file
+BattleShipAIBot.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.s
+.PHONY : BattleShipAIBot.cpp.s
+
+BattleShipRndBot.o: BattleShipRndBot.cpp.o
+
+.PHONY : BattleShipRndBot.o
+
+# target to build an object file
+BattleShipRndBot.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o
+.PHONY : BattleShipRndBot.cpp.o
+
+BattleShipRndBot.i: BattleShipRndBot.cpp.i
+
+.PHONY : BattleShipRndBot.i
+
+# target to preprocess a source file
+BattleShipRndBot.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.i
+.PHONY : BattleShipRndBot.cpp.i
+
+BattleShipRndBot.s: BattleShipRndBot.cpp.s
+
+.PHONY : BattleShipRndBot.s
+
+# target to generate assembly for a file
+BattleShipRndBot.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.s
+.PHONY : BattleShipRndBot.cpp.s
+
+Bot.o: Bot.cpp.o
+
+.PHONY : Bot.o
+
+# target to build an object file
+Bot.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o
+.PHONY : Bot.cpp.o
+
+Bot.i: Bot.cpp.i
+
+.PHONY : Bot.i
+
+# target to preprocess a source file
+Bot.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/Bot.cpp.i
+.PHONY : Bot.cpp.i
+
+Bot.s: Bot.cpp.s
+
+.PHONY : Bot.s
+
+# target to generate assembly for a file
+Bot.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/Bot.cpp.s
+.PHONY : Bot.cpp.s
+
 CBattleShipApp.o: CBattleShipApp.cpp.o
 
 .PHONY : CBattleShipApp.o
@@ -375,6 +456,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cpp_battleship_game"
+	@echo "... BattleShipAIBot.o"
+	@echo "... BattleShipAIBot.i"
+	@echo "... BattleShipAIBot.s"
+	@echo "... BattleShipRndBot.o"
+	@echo "... BattleShipRndBot.i"
+	@echo "... BattleShipRndBot.s"
+	@echo "... Bot.o"
+	@echo "... Bot.i"
+	@echo "... Bot.s"
 	@echo "... CBattleShipApp.o"
 	@echo "... CBattleShipApp.i"
 	@echo "... CBattleShipApp.s"

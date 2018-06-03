@@ -2,9 +2,7 @@
 // Created by Gihyeon Yang on 2018. 6. 2..
 //
 
-#include <iostream>
 #include "GameManager.h"
-
 
 GameManager::GameManager(Player *attacker, Player *defender, InputPane *inputPane) {
     this->setAttacker(attacker);
@@ -16,12 +14,28 @@ GameManager::GameManager(Player *attacker, Player *defender, InputPane *inputPan
     this->numOfShip[2] = CRUISER;
     this->numOfShip[3] = DESTROYER;
 
+    switch (BOT) {
+        case 0:
+            this->bot = nullptr;
+            break;
+        case 1:
+            this->bot = new BattleShipRndBot(MAP_SIZE);
+            break;
+        case 2:
+            this->bot = new BattleShipAIBot(MAP_SIZE);
+            break;
+        default:
+            this->bot = nullptr;
+            break;
+    }
+
 }
 
 GameManager::~GameManager() {
     delete this->attacker;
     delete this->defender;
     delete this->inputPane;
+    delete this->bot;
 
     this->ship = new Ship **[SHIP_TYPE];
 
@@ -47,7 +61,6 @@ void GameManager::init() {
             this->defender->setupShip(this->ship[type][i]);
         }
     }
-
 }
 
 void GameManager::addTurn() {
@@ -84,40 +97,13 @@ void GameManager::generateShip() {
 }
 
 
-Ship ***GameManager::getShip() const {
-    return ship;
-}
-
-void GameManager::setShip(Ship ***ship) {
-    GameManager::ship = ship;
-}
-
 int GameManager::getTurn() const {
     return turn;
 }
 
-void GameManager::setTurn(int turn) {
-    GameManager::turn = turn;
-}
-
-int GameManager::getMode() const {
-    return mode;
-}
-
-void GameManager::setMode(int mode) {
-    GameManager::mode = mode;
-}
-
-Player *GameManager::getAttacker() const {
-    return attacker;
-}
 
 void GameManager::setAttacker(Player *attacker) {
     GameManager::attacker = attacker;
-}
-
-Player *GameManager::getDefender() const {
-    return defender;
 }
 
 void GameManager::setDefender(Player *defender) {
@@ -135,7 +121,6 @@ bool GameManager::isDeadAllShip() {
     for (int i = 0; i < 4; ++i) {
         for (int j = 0; j < this->numOfShip[i]; ++j) {
             rBool |= !this->ship[i][j]->isDead();
-
         }
     }
 
@@ -150,12 +135,9 @@ void GameManager::setInputPane(InputPane *inputPane) {
     GameManager::inputPane = inputPane;
 }
 
-int a = 0;
-int b = 0;
 
 void GameManager::attack() {
-    int rowInput = this->inputPane->input();
-
+    int rowInput = ((BOT != 0) ? this->bot->command() : this->inputPane->input());
     struct position attackPos = {
             rowInput / 10,
             rowInput % 10
@@ -198,7 +180,6 @@ Ship *GameManager::attackShip(struct position attackPos) {
                     (shipPos[1].x <= attackPos.x && attackPos.x <= shipPos[0].x &&
                      shipPos[1].y <= attackPos.y && attackPos.y <= shipPos[0].y)
                     ) {
-                // std::cout << shipPos[0] << ", " << shipPos[1] << shipPos[1];
                 findShip = this->ship[type][i];
                 break;
             }

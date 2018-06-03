@@ -45,11 +45,9 @@ public:
 
     Ship(const std::string &name, int size, int type);
 
-    int getHp() const;
-
     void attack();
+
     bool isDead();
-    const std::string &getName() const;
 
     position getPos();
 

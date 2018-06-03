@@ -8,6 +8,8 @@
 #include "ShipHeader.h"
 #include "Player.h"
 #include "InputPane.h"
+#include "unistd.h"
+#include "BotHeader.h"
 
 #define AIRCRAFT 1
 #define BATTLESHIP 1
@@ -15,15 +17,17 @@
 #define DESTROYER 2
 #define SHIP_TYPE 4
 
+#define BOT 1 // 0: User, 1: Rnd, 2: AI
+
 class GameManager {
 private:
     Ship ***ship;
     int turn;
-    int mode;
     Player *attacker;
     int numOfShip[4];
     Player *defender;
     InputPane *inputPane;
+    Bot *bot;
 
 public:
 
@@ -39,23 +43,9 @@ public:
 
     void render();
 
-    Ship ***getShip() const;
-
-    void setShip(Ship ***ship);
-
     int getTurn() const;
 
-    void setTurn(int turn);
-
-    int getMode() const;
-
-    void setMode(int mode);
-
-    Player *getAttacker() const;
-
     void setAttacker(Player *attacker);
-
-    Player *getDefender() const;
 
     void setDefender(Player *defender);
 

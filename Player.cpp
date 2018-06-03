@@ -2,7 +2,6 @@
 // Created by Gihyeon Yang on 2018. 6. 2..
 //
 
-#include <iostream>
 #include "Player.h"
 
 #define ATTACKER 1
@@ -29,17 +28,14 @@ void Player::setupShip(Ship *ship) {
         ship->setPos(this->map->mapData);
 
     struct position movePos{};
-    // std::cout << std::endl;
     for (int range = 0; range < ship->getSize(); ++range) {
         movePos = ship->getPos() + ship->getDirection() * range;
-        // std::cout << movePos << std::endl;
         this->map->setMapData(
                 movePos,
                 (char) ('A' + ship->getType())
         );
     }
 }
-
 
 void Player::render() {
     this->map->draw();

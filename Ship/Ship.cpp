@@ -11,14 +11,6 @@ Ship::Ship(const std::string &name, const int size, const int type)
         : hp(size), name(name), size(size), type(type) {
 }
 
-int Ship::getHp() const {
-    return hp;
-}
-
-const std::string &Ship::getName() const {
-    return name;
-}
-
 position Ship::getPos() {
     return pos;
 }
@@ -44,7 +36,7 @@ void Ship::setPos(char map[8][8]) {
             {0,  -1},
             {-1, 0}
     };
-    bool validDirection[4];
+    bool validDirectoin[4];
 
     do {
         rPosition = {
@@ -56,7 +48,7 @@ void Ship::setPos(char map[8][8]) {
         bool f = false;
 
         for (int i = 0; i < 4; ++i) {
-            validDirection[i] = true;
+            validDirectoin[i] = true;
             for (int range = 0; range < this->getSize(); ++range) {
                 tmpPositoin = rPosition + direction[i] * range;
                 if (
@@ -66,11 +58,11 @@ void Ship::setPos(char map[8][8]) {
                         ) ||
                         map[tmpPositoin.x][tmpPositoin.y] != '_'
                         ) {
-                    validDirection[i] = false;
+                    validDirectoin[i] = false;
                     break;
                 }
             }
-            f |= validDirection[i];
+            f |= validDirectoin[i];
         }
 
         if (!f) continue;
@@ -78,7 +70,7 @@ void Ship::setPos(char map[8][8]) {
         int rnd = 0;
         do {
             rnd = std::rand() % 4;
-        } while (!validDirection[rnd]);
+        } while (!validDirectoin[rnd]);
 
         this->direction = direction[rnd];
 

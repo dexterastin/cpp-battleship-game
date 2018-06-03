@@ -6,13 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/Users/dexterastin/CLionProjects/cpp-battleship-game/CBattleShipApp.cpp
+/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipAIBot.cpp
+BattleShipAIBot.h
+/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipAIBot.h
+
+/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipAIBot.h
+Bot.h
+/Users/dexterastin/CLionProjects/cpp-battleship-game/Bot.h
+
+/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipRndBot.cpp
+cstdlib
+-
+BattleShipRndBot.h
+/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipRndBot.h
+
+/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipRndBot.h
+Bot.h
+/Users/dexterastin/CLionProjects/cpp-battleship-game/Bot.h
+
+/Users/dexterastin/CLionProjects/cpp-battleship-game/Bot.cpp
 iostream
 -
+Bot.h
+/Users/dexterastin/CLionProjects/cpp-battleship-game/Bot.h
+
+/Users/dexterastin/CLionProjects/cpp-battleship-game/Bot.h
+
+/Users/dexterastin/CLionProjects/cpp-battleship-game/BotHeader.h
+Bot.h
+/Users/dexterastin/CLionProjects/cpp-battleship-game/Bot.h
+BattleShipAIBot.h
+/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipAIBot.h
+BattleShipRndBot.h
+/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipRndBot.h
+
+/Users/dexterastin/CLionProjects/cpp-battleship-game/CBattleShipApp.cpp
 CBattleShipApp.h
 /Users/dexterastin/CLionProjects/cpp-battleship-game/CBattleShipApp.h
-GameManager.h
-/Users/dexterastin/CLionProjects/cpp-battleship-game/GameManager.h
 
 /Users/dexterastin/CLionProjects/cpp-battleship-game/CBattleShipApp.h
 CBattleShipMap.h
@@ -37,8 +67,6 @@ Pane.h
 /Users/dexterastin/CLionProjects/cpp-battleship-game/Pane.h
 
 /Users/dexterastin/CLionProjects/cpp-battleship-game/GameManager.cpp
-iostream
--
 GameManager.h
 /Users/dexterastin/CLionProjects/cpp-battleship-game/GameManager.h
 
@@ -49,6 +77,10 @@ Player.h
 /Users/dexterastin/CLionProjects/cpp-battleship-game/Player.h
 InputPane.h
 /Users/dexterastin/CLionProjects/cpp-battleship-game/InputPane.h
+unistd.h
+/Users/dexterastin/CLionProjects/cpp-battleship-game/unistd.h
+BotHeader.h
+/Users/dexterastin/CLionProjects/cpp-battleship-game/BotHeader.h
 
 /Users/dexterastin/CLionProjects/cpp-battleship-game/InputPane.cpp
 iostream
@@ -69,8 +101,6 @@ curses.h
 -
 
 /Users/dexterastin/CLionProjects/cpp-battleship-game/Player.cpp
-iostream
--
 Player.h
 /Users/dexterastin/CLionProjects/cpp-battleship-game/Player.h
 

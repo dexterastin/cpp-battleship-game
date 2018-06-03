@@ -2,36 +2,33 @@
 // Created by Gihyeon Yang on 2018. 5. 28..
 //
 
-#include <iostream>
 #include "CBattleShipApp.h"
-#include "GameManager.h"
-
-#define GAME_TURN 100
 
 CBattleShipApp::CBattleShipApp() {
 
 }
 
 CBattleShipApp::~CBattleShipApp() {
-    delete this->cBattleShipMap;
     delete this->inputPane;
     delete this->statPane;
     delete this->gameManager;
 }
 
-void CBattleShipApp::play() {
+int CBattleShipApp::play() {
     this->init();
     this->render();
 
-    while (gameManager->getTurn() != GAME_TURN && !gameManager->isDeadAllShip()) {
+    while (!gameManager->isDeadAllShip()) {
         gameManager->addTurn();
         gameManager->attack();
         this->update();
     }
 
+    int rTurn = gameManager->getTurn();
+
     this->destroy();
 
-
+    return rTurn;
 }
 
 void CBattleShipApp::init() {
@@ -76,6 +73,5 @@ void CBattleShipApp::update() {
 void CBattleShipApp::destroy() {
     getch();
     endwin();
-    delete this->cBattleShipMap;
 }
 

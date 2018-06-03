@@ -8,6 +8,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_battleship_game.dir/Ship/Ship.cpp.o"
   "CMakeFiles/cpp_battleship_game.dir/Player.cpp.o"
   "CMakeFiles/cpp_battleship_game.dir/GameManager.cpp.o"
+  "CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o"
+  "CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o"
+  "CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o"
   "cpp_battleship_game.pdb"
   "cpp_battleship_game"
 )

@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipAIBot.cpp" "/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o"
+  "/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipRndBot.cpp" "/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o"
+  "/Users/dexterastin/CLionProjects/cpp-battleship-game/Bot.cpp" "/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o"
   "/Users/dexterastin/CLionProjects/cpp-battleship-game/CBattleShipApp.cpp" "/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/CMakeFiles/cpp_battleship_game.dir/CBattleShipApp.cpp.o"
   "/Users/dexterastin/CLionProjects/cpp-battleship-game/CBattleShipMap.cpp" "/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/CMakeFiles/cpp_battleship_game.dir/CBattleShipMap.cpp.o"
   "/Users/dexterastin/CLionProjects/cpp-battleship-game/GameManager.cpp" "/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/CMakeFiles/cpp_battleship_game.dir/GameManager.cpp.o"

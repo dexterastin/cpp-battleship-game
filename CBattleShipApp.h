@@ -14,7 +14,6 @@
 class CBattleShipApp {
 protected:
     GameManager *gameManager;
-    CBattleShipMap *cBattleShipMap;
     StatPane *statPane;
     InputPane *inputPane;
 
@@ -31,7 +30,7 @@ public:
 
     ~CBattleShipApp();
 
-    void play();
+    int play();
 };
 
 

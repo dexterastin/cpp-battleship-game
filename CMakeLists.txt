@@ -26,4 +26,13 @@ add_executable(
         Player.cpp
         Player.h
         ShipHeader.h
-        GameManager.cpp GameManager.h )
+        GameManager.cpp
+        GameManager.h
+        BattleShipAIBot.h
+        BattleShipAIBot.cpp
+        BattleShipRndBot.h
+        BattleShipRndBot.cpp
+        Bot.cpp
+        Bot.h
+        BotHeader.h
+)

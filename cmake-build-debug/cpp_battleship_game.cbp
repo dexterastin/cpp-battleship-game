@@ -82,6 +82,27 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipAIBot.cpp">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipAIBot.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipRndBot.cpp">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipRndBot.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/Bot.cpp">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/Bot.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
+		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/BotHeader.h">
+			<Option target="cpp_battleship_game"/>
+		</Unit>
 		<Unit filename="/Users/dexterastin/CLionProjects/cpp-battleship-game/CBattleShipApp.cpp">
 			<Option target="cpp_battleship_game"/>
 		</Unit>

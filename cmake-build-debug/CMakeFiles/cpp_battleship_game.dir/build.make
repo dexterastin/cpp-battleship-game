@@ -273,6 +273,78 @@ CMakeFiles/cpp_battleship_game.dir/GameManager.cpp.o.provides: CMakeFiles/cpp_ba
 CMakeFiles/cpp_battleship_game.dir/GameManager.cpp.o.provides.build: CMakeFiles/cpp_battleship_game.dir/GameManager.cpp.o
 
 
+CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o: CMakeFiles/cpp_battleship_game.dir/flags.make
+CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o: ../BattleShipAIBot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o -c /Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipAIBot.cpp
+
+CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipAIBot.cpp > CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.i
+
+CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipAIBot.cpp -o CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.s
+
+CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o.requires
+
+CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o.provides: CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o.provides
+
+CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o.provides.build: CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o
+
+
+CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o: CMakeFiles/cpp_battleship_game.dir/flags.make
+CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o: ../BattleShipRndBot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o -c /Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipRndBot.cpp
+
+CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipRndBot.cpp > CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.i
+
+CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dexterastin/CLionProjects/cpp-battleship-game/BattleShipRndBot.cpp -o CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.s
+
+CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o.requires
+
+CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o.provides: CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o.provides
+
+CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o.provides.build: CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o
+
+
+CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o: CMakeFiles/cpp_battleship_game.dir/flags.make
+CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o: ../Bot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o -c /Users/dexterastin/CLionProjects/cpp-battleship-game/Bot.cpp
+
+CMakeFiles/cpp_battleship_game.dir/Bot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_battleship_game.dir/Bot.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dexterastin/CLionProjects/cpp-battleship-game/Bot.cpp > CMakeFiles/cpp_battleship_game.dir/Bot.cpp.i
+
+CMakeFiles/cpp_battleship_game.dir/Bot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_battleship_game.dir/Bot.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dexterastin/CLionProjects/cpp-battleship-game/Bot.cpp -o CMakeFiles/cpp_battleship_game.dir/Bot.cpp.s
+
+CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o.requires
+
+CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o.provides: CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp_battleship_game.dir/build.make CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o.provides
+
+CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o.provides.build: CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o
+
+
 # Object files for target cpp_battleship_game
 cpp_battleship_game_OBJECTS = \
 "CMakeFiles/cpp_battleship_game.dir/main.cpp.o" \
@@ -283,7 +355,10 @@ cpp_battleship_game_OBJECTS = \
 "CMakeFiles/cpp_battleship_game.dir/CBattleShipApp.cpp.o" \
 "CMakeFiles/cpp_battleship_game.dir/Ship/Ship.cpp.o" \
 "CMakeFiles/cpp_battleship_game.dir/Player.cpp.o" \
-"CMakeFiles/cpp_battleship_game.dir/GameManager.cpp.o"
+"CMakeFiles/cpp_battleship_game.dir/GameManager.cpp.o" \
+"CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o" \
+"CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o" \
+"CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o"
 
 # External object files for target cpp_battleship_game
 cpp_battleship_game_EXTERNAL_OBJECTS =
@@ -297,9 +372,12 @@ cpp_battleship_game: CMakeFiles/cpp_battleship_game.dir/CBattleShipApp.cpp.o
 cpp_battleship_game: CMakeFiles/cpp_battleship_game.dir/Ship/Ship.cpp.o
 cpp_battleship_game: CMakeFiles/cpp_battleship_game.dir/Player.cpp.o
 cpp_battleship_game: CMakeFiles/cpp_battleship_game.dir/GameManager.cpp.o
+cpp_battleship_game: CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o
+cpp_battleship_game: CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o
+cpp_battleship_game: CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o
 cpp_battleship_game: CMakeFiles/cpp_battleship_game.dir/build.make
 cpp_battleship_game: CMakeFiles/cpp_battleship_game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable cpp_battleship_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dexterastin/CLionProjects/cpp-battleship-game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable cpp_battleship_game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_battleship_game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -316,6 +394,9 @@ CMakeFiles/cpp_battleship_game.dir/requires: CMakeFiles/cpp_battleship_game.dir/
 CMakeFiles/cpp_battleship_game.dir/requires: CMakeFiles/cpp_battleship_game.dir/Ship/Ship.cpp.o.requires
 CMakeFiles/cpp_battleship_game.dir/requires: CMakeFiles/cpp_battleship_game.dir/Player.cpp.o.requires
 CMakeFiles/cpp_battleship_game.dir/requires: CMakeFiles/cpp_battleship_game.dir/GameManager.cpp.o.requires
+CMakeFiles/cpp_battleship_game.dir/requires: CMakeFiles/cpp_battleship_game.dir/BattleShipAIBot.cpp.o.requires
+CMakeFiles/cpp_battleship_game.dir/requires: CMakeFiles/cpp_battleship_game.dir/BattleShipRndBot.cpp.o.requires
+CMakeFiles/cpp_battleship_game.dir/requires: CMakeFiles/cpp_battleship_game.dir/Bot.cpp.o.requires
 
 .PHONY : CMakeFiles/cpp_battleship_game.dir/requires
 
