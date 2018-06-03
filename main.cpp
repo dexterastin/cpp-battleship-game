@@ -4,6 +4,8 @@
 // 20171648 양기현
 //
 
+#include <cstdlib>
+#include <ctime>
 #include "CBattleShipApp.h"
 
 int main() {
