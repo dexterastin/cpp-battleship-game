@@ -4,6 +4,7 @@
 // 20171648 양기현
 //
 
+#include <iostream>
 #include "CBattleShipApp.h"
 
 CBattleShipApp::CBattleShipApp() {
@@ -27,6 +28,10 @@ int CBattleShipApp::play() {
     }
 
     int rTurn = gameManager->getTurn();
+
+    std::cout << "===== FINAL TURN : " << rTurn << "\t=====" << std::endl;
+    std::cout << "Press Enter...\n";
+    int i = getch();
 
     this->destroy();
 

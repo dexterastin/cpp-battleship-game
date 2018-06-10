@@ -12,13 +12,12 @@ BattleShipRndBot::BattleShipRndBot(int mapsize) : Bot(mapsize) {
 }
 
 int BattleShipRndBot::command() {
-    int x, y;
+    int rInt;
     do {
-        x = rand() % 8;
-        y = rand() % 8;
-    } while (this->isVisitedAt(x, y));
+        rInt = rand() % 88;
+    } while (this->isVisitedAt(rInt / 10, rInt % 10));
 
-    this->setAt(x, y);
+    this->setAt(rInt / 10, rInt % 10);
 
-    return y * 10 + x;
+    return rInt;
 }

@@ -144,10 +144,11 @@ bool Ship::isDead() {
     return this->hp <= 0;
 }
 
-int Ship::getSize() const {
-    return this->size;
-}
 
 int Ship::getType() const {
     return this->type;
+}
+
+Ship::~Ship() {
+
 }

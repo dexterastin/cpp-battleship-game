@@ -20,6 +20,9 @@ public:
             3
     ) {}
 
+    int getSize() const override {
+        return this->size;
+    }
 };
 
 

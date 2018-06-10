@@ -38,14 +38,17 @@ private:
     std::string name;
     struct position pos;
     struct position direction;
-    int size;
     int type;
+protected:
+    int size;
 
 public:
 
     Ship();
 
     Ship(const char *name, int size, int type);
+
+    virtual ~Ship();
 
     void attack();
 
@@ -55,7 +58,7 @@ public:
 
     const position &getDirection() const;
 
-    int getSize() const;
+    virtual int getSize() const = 0;
 
     int getType() const;
 

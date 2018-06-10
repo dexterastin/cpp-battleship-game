@@ -14,7 +14,7 @@ class BattleShipAIBot
         : public Bot {
 public:
     BattleShipAIBot(int mapsize);
-
+    int command();
 };
 
 
